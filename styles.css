@@ -1,95 +1,159 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    line-height: 1.8;
     margin: 0;
-    padding: 1rem; /* Padding for better readability */
+    padding: 1rem;
     text-align: left;
-    color: #212529; /* Default text color */
-    background-color: #f8f9fa; /* Light background for contrast */
+    color: #e0e0e0; /* Light text for dark theme */
+    background-color: #121212; /* Dark background */
 }
 
+/* Header Styles */
 header {
-    background-color: #343a40; /* Dark header background */
+    background: linear-gradient(90deg, #1a1a1a, #333); /* Dark gradient header background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Slightly darker shadow */
+    padding: 1rem 0;
 }
 
 header .logo {
-    max-height: 50px; /* Consistent logo size */
+    max-height: 60px;
 }
 
-section {
-    padding: 2rem 0; /* Section padding */
-    margin: 1rem 0; /* Optional margin for sections */
-}
-
-h1, h2, h3 {
-    color: #343a40; /* Dark color for headings */
-    margin-bottom: 1rem;
-}
-
-p {
-    margin-bottom: 1rem;
-    line-height: 1.5;
+.nav {
+    justify-content: flex-end;
 }
 
 .nav-link {
-    transition: color 0.3s ease; /* Smooth transition for link color */
-    color: #f8f9fa; /* Default color for navigation links */
-    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    color: #ffffff; /* White navigation links */
+    padding: 0.75rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
 }
 
 .nav-link:hover {
-    color: #007bff; /* Color change on hover for better UX */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
 }
 
-img {
-    max-width: 100%; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
+/* Hero Section */
+#home {
+    background-image: url('https://source.unsplash.com/1600x900/?technology,night');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* White text on dark background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+    padding: 5rem 0;
+    text-align: center;
 }
 
+#home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#home p {
+    font-size: 1.25rem;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 0;
+    margin: 2rem 0;
+    background-color: #1a1a1a; /* Dark background for sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #00bcd4; /* Bright accent color for headings */
+}
+
+p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* Services Section */
+#services p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    background-color: #212121; /* Darker card background */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /* Stronger shadow */
+    transition: transform 0.3s ease;
+}
+
+#services p:hover {
+    transform: translateY(-10px); /* Hover effect for service descriptions */
+}
+
+/* Core Technologies Section */
+#core-technologies {
+    background-color: #2a2a2a; /* Slightly lighter background */
+    padding: 3rem 1.5rem;
+    border-radius: 15px;
+    color: #cfd8dc; /* Lighter text color */
+}
+
+/* Footer Styling */
 footer {
-    background-color: #343a40; /* Dark footer background */
-    padding: 1rem 0; /* Padding for footer */
-    text-align: center; /* Center footer text */
-    color: #f8f9fa; /* Footer text color */
+    background-color: #1a1a1a; /* Dark footer */
+    padding: 2rem 0;
+    text-align: center;
+    color: #b0bec5;
+    font-size: 1rem;
 }
 
-/* Accessibility Enhancements */
-a {
-    text-decoration: none;
+/* Footer social icons */
+footer .social-icons {
+    margin-top: 1rem;
 }
 
-a:focus, a:hover {
-    outline: none;
-    text-decoration: underline; /* Add underline for focus */
+footer .social-icons a {
+    color: #b0bec5;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #00bcd4; /* Accent hover color for social icons */
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .nav {
-        flex-direction: column; /* Stack navigation links on smaller screens */
-        align-items: flex-start; /* Align links to the start */
+    #home h1 {
+        font-size: 2.5rem;
     }
 
-    .nav-link {
-        padding: 0.5rem 0; /* Add padding for easier tapping */
+    #home p {
+        font-size: 1.1rem;
     }
 
-    header .d-flex {
-        flex-direction: column; /* Stack logo and nav */
+    h2 {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 576px) {
     body {
-        padding: 0.5rem; /* Less padding on very small screens */
+        padding: 0.5rem;
     }
 
     section {
-        padding: 1.5rem 0; /* Reduced padding for small screens */
+        padding: 2rem 0;
     }
 
     h1, h2, h3 {
-        font-size: 1.5rem; /* Adjust font sizes */
+        font-size: 1.5rem;
     }
 }

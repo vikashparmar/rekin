@@ -1,10 +1,12 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 1rem; /* Added padding for better readability */
+    padding: 1rem; /* Padding for better readability */
     text-align: left;
     color: #212529; /* Default text color */
+    background-color: #f8f9fa; /* Light background for contrast */
 }
 
 header {
@@ -12,7 +14,7 @@ header {
 }
 
 header .logo {
-    max-height: 50px;
+    max-height: 50px; /* Consistent logo size */
 }
 
 section {
@@ -20,12 +22,24 @@ section {
     margin: 1rem 0; /* Optional margin for sections */
 }
 
+h1, h2, h3 {
+    color: #343a40; /* Dark color for headings */
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
 .nav-link {
     transition: color 0.3s ease; /* Smooth transition for link color */
+    color: #f8f9fa; /* Default color for navigation links */
+    padding: 0.5rem 1rem;
 }
 
 .nav-link:hover {
-    color: #f8f9fa; /* Change color on hover */
+    color: #007bff; /* Color change on hover for better UX */
 }
 
 img {
@@ -38,6 +52,16 @@ footer {
     padding: 1rem 0; /* Padding for footer */
     text-align: center; /* Center footer text */
     color: #f8f9fa; /* Footer text color */
+}
+
+/* Accessibility Enhancements */
+a {
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    outline: none;
+    text-decoration: underline; /* Add underline for focus */
 }
 
 /* Media Queries */

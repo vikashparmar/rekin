@@ -96,6 +96,20 @@ p {
     transform: translateY(-10px); /* Hover effect for service descriptions */
 }
 
+/* Project Lifecycle Image Background */
+.project-lifecycle-image {
+    background-color: #ffffff; /* White background for image */
+    padding: 1rem; /* Optional padding around the image */
+    border-radius: 8px; /* Rounded corners for the image background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for visual depth */
+    text-align: center; /* Center image inside the div */
+}
+
+.project-lifecycle-image img {
+    max-width: 100%; /* Keep the image responsive */
+    height: auto;
+}
+
 /* Core Technologies Section */
 #core-technologies {
     background-color: #2a2a2a; /* Slightly lighter background */

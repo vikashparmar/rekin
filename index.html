@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REKIN SOLUTIONS PRIVATE LIMITED</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#core-technologies">Core Technologies</a></li>
-                <li><a href="#project-lifecycle">Project Lifecycle</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="bg-dark text-white p-3 mb-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <img src="https://i.ibb.co/z7qYzCN/logo.jpg" alt="Company Logo" class="logo">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
+                        <li class="nav-item"><a href="#core-technologies" class="nav-link text-white">Core Technologies</a></li>
+                        <li class="nav-item"><a href="#project-lifecycle" class="nav-link text-white">Project Lifecycle</a></li>
+                        <li class="nav-item"><a href="#mission" class="nav-link text-white">Company Mission</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <section id="home">
-        <h1>Welcome to REKIN SOLUTIONS PRIVATE LIMITED</h1>
+    <section id="home" class="container">
+        <h1 class="my-4">Welcome to REKIN SOLUTIONS PRIVATE LIMITED</h1>
     </section>
-    <section id="about">
+    <section id="about" class="container my-4">
         <h2>About Us</h2>
         <p><b>Rekin Solutions Private Limited</b> is a technology service provider specializing in Full-Stack Development.</p>
         <p>Expertise across a broad range of modern technologies, Rekin offers comprehensive solutions to build robust, scalable, and Cloud-Ready Applications.</p>
         <p>Rekin company ensures tailored solutions for clients, driving innovation and efficiency in every project.</p>
     </section>
-    <section id="services">
+    <section id="services" class="container my-4">
         <h2>Our Services</h2>
         <p><b>Web Development:</b> Full-stack development, including frontend and backend solutions for dynamic and responsive websites and web applications.</p>
         <p><b>Mobile App Development:</b> Building cross-platform mobile applications using React Native.</p>
@@ -37,7 +44,7 @@
         <p><b>Operations:</b> Offering DevOps services, including continuous integration, delivery pipelines, infrastructure automation, and 24/7 support to ensure smooth operations and immediate issue resolution.</p>
         <p><b>Security and Compliance:</b> Ensuring applications and infrastructure adhere to security best practices and compliance requirements, providing secure solutions across cloud and on-premises environments.</p>
     </section>
-    <section id="core-technologies">
+    <section id="core-technologies" class="container my-4">
         <h2>Core Technologies</h2>
         <p><b>Frontend Development:</b> Angular, ReactJS, VueJS, React Native for building dynamic and scalable user interfaces. jQuery for quick DOM manipulations. Django and Flask for templating and frontend rendering where needed.</p>
         <p><b>Backend Development:</b> Python, NodeJS, ExpressJS for server-side development. Serverless architecture for event-driven applications. Django REST Framework and FastAPI for building scalable APIs.</p>
@@ -45,27 +52,42 @@
         <p><b>Cloud Platforms:</b> AWS, Azure, GCP for scalable, cloud-based applications.</p>
         <p><b>CI/CD Tools:</b> Jenkins, Azure DevOps, and GitHub Actions for automated integration and continuous deployment workflows.</p>
     </section>
-    <section id="project-lifecycle">
+    <section id="project-lifecycle" class="container my-4">
         <h2>Project Lifecycle</h2>
-        <img src="https://i.ibb.co/tJQxFyJ/project-lifecycle.png" alt="Project Lifecycle Image">
-        </br></br>
+        <img src="https://i.ibb.co/tJQxFyJ/project-lifecycle.png" alt="Project Lifecycle Image" class="img-fluid">
         <p><b>Requirements Analysis:</b> The first step, involving gathering and analyzing the requirements of the project. This stage ensures that the project team understands the client's needs and goals.</p>
         <p><b>UI and UX Design:</b> After requirements are clear, the focus shifts to user interface (UI) and user experience (UX) design. This step involves designing the system's look and feel, ensuring it's user-friendly and meets the client's expectations.</p>
         <p><b>Architecture Design:</b> The architecture design phase outlines the technical structure and design of the system, deciding on frameworks, tools, and system components needed for front-end and back-end development.</p>
-        <p><b>Development (Front-End and Back-End):</b> The Front-End and Back-End development will happen side by side.
-        <br><b>Front-End Development:</b> Focuses on building the user-facing part of the system (UI).
-        <br><b>Back-End Development:</b> Focuses on the server-side logic, databases, and application functionalities.</p>
+        <p><b>Development (Front-End and Back-End):</b> The Front-End and Back-End development will happen side by side.<br><b>Front-End Development:</b> Focuses on building the user-facing part of the system (UI).<br><b>Back-End Development:</b> Focuses on the server-side logic, databases, and application functionalities.</p>
         <p><b>Integration:</b> This stage involves combining the front-end and back-end systems to ensure they work together seamlessly. It ensures that all components interact as expected.</p>
         <p><b>Testing and QA:</b> After integration, testing and quality assurance (QA) take place. This involves identifying bugs, ensuring the system functions correctly, and verifying it meets the specified requirements.</p>
         <p><b>Help Desk:</b> Post-development, the help desk provides support to users, helping them troubleshoot any issues they encounter during use.</p>
         <p><b>Continuous Support & Evolution:</b> This stage emphasizes continuous monitoring, support, and improvements based on user feedback and evolving project needs.</p>
     </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>How people can reach you.</p>
+    <section id="mission" class="container my-4">
+        <h2>Company Mission</h2>
+        <p>Our mission is to empower businesses through innovative and scalable digital solutions, leveraging modern technology to drive growth, efficiency, and security. We strive to deliver exceptional value by building custom solutions tailored to each client's unique needs, ensuring long-term success in a competitive digital landscape.</p>
+        <h3>Why Partner with Us:</h3>
+        <p><b>Expertise Across Technologies:</b> With a wide range of expertise in frontend and backend development, cloud platforms, and modern tools, REKIN SOLUTIONS delivers high-quality, robust solutions that meet industry standards.</p>
+        <p><b>Tailored Solutions:</b> We provide customized solutions that cater to the specific goals and challenges of each client, ensuring optimal outcomes.</p>
+        <p><b>Commitment to Innovation:</b> We constantly stay updated on the latest technological trends and practices to offer cutting-edge solutions.</p>
+        <p><b>Focus on Security:</b> Our services prioritize security and compliance, ensuring that your applications and infrastructure are protected from vulnerabilities.</p>
+        <p><b>Seamless Collaboration:</b> We work closely with clients to understand their needs and maintain clear communication throughout the project lifecycle.</p>
     </section>
-    <footer>
+    <section id="contact" class="container my-4">
+        <h2>Contact Us</h2>
+        <p><b>Address:</b> Rekin Solutions Private Limited</p>
+        <p>60-Nagin Lake Appartments</p>
+        <p>Pachim Vihar</p>
+        <p>West Delhi, 110087</p>
+        <p><b>Email:</b> contact@rekinsolutions.com</p>
+        <p><b>Phone:</b> +91-9560260296</p>
+    </section>
+    <footer class="bg-dark text-white text-center p-3">
         <p>&copy; 2024 REKIN SOLUTIONS PRIVATE LIMITED. All rights reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
